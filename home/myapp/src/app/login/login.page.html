@@ -1,0 +1,32 @@
+<ion-content class="ivan"> 
+
+  <ion-header>
+    
+      <ion-toolbar color="black">
+
+        <img src="../../assets/icon/Logo_DuocUC.svg.png" width="400px" class="logo">
+  
+    
+    </ion-toolbar>
+  </ion-header>
+  
+  <div class="contenedor">
+
+      <ion-input [(ngModel)]="user.usuario" label="Usuario" label-placement="floating" fill="outline" placeholder="Ingresar usuario" style="--color: black; --border-width: 2px;"></ion-input>
+    <ion-input [(ngModel)]="user.pass" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresar contraseña" type="password" style="--color: black; --border-width: 2px;"></ion-input><br>
+            <ion-toggle aria-label="Success toggle" label-placement="floating" fill="outline"color="success" style="--color: black; --border-width: 2px" [checked]="true">Recordar usuario</ion-toggle>
+
+  <br />
+  
+
+  <br>
+  <a (click)="irASesion()" class="ion-button ion-button-full">Recuperar contraseña</a>
+
+  <ion-button expand="full" (click)="irInicio()"> Iniciar</ion-button>
+  
+  <ion-button expand="full" id="Registrarse"> Registrarse</ion-button>
+
+  
+</div>
+ 
+</ion-content>
